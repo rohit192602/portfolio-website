@@ -31,9 +31,30 @@
             <h1>Hi, I'm Rohit More</h1>
             <p>Electronics & Telecommunication Engineer | Flutter, Java, Firebase, and more...</p>
             <a href="projects.html" class="btn">View Projects</a>
+            <button id="editProfileBtn" class="btn">Edit Profile</button>
         </div>
         <img src="images/profile.jpg" alt="Profile Image" class="hero-image">
     </section>
+
+    <!-- Modal for Edit Profile -->
+    <div id="editProfileModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Profile</h2>
+            <form id="editProfileForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" name="mobile" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2024 Rohit More. All rights reserved.</p>
